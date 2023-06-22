@@ -1,0 +1,52 @@
+.user-list-empty {
+  margin: auto;
+  text-align: center;
+}
+
+.user-list-empty p {
+  margin-top: 0;
+  margin-bottom: 2.5vmin;
+  font-size: 1.4em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.primary-button {
+  margin-bottom: 2.5vmin;
+  padding: 0.6em 1.4em;
+  border: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  background-color: var(--primary);
+  color: #ffffff;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  -webkit-transition: all 0.5s;
+}
+
+.primary-button:hover {
+  background-color: var(--secondary);
+  box-shadow: 0 0 6px var(--secondary);
+  transform: scale(1.1);
+}
+
+.primary-button:active {
+  background-color: var(--secondary);
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.primary-button:focus-visible {
+  outline: var(--secondary);
+}
+
+.user-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 2em;
+  justify-content: space-evenly;
+}

@@ -1,0 +1,62 @@
+.user-card {
+  background-color: #ddd;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.user-card:hover {
+  transform: scale(1.05, 1.05);
+}
+
+.user-list-container:hover .user-card:not(:hover) .user-avatar {
+  filter: blur(2px);
+}
+
+.user-avatar {
+  width: 100%;
+  height: auto;
+}
+
+.user-content {
+  background-color: #fff;
+  padding: 3vmin;
+  border-radius: 4px;
+}
+
+.user-content h4 {
+  margin-top: 0;
+  margin-bottom: 3vmin;
+}
+
+.user-sub-content {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  color: #777;
+  font-size: 0.9em;
+  margin: 0.4em 0;
+}
+
+.user-sub-content a {
+  color: #777;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1vmin;
+}
+
+.user-actions button {
+  border-radius: 50%;
+  cursor: pointer;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+}

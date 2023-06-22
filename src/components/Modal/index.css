@@ -1,0 +1,102 @@
+.modal-window {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.modal-box {
+  width: 40%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1.4em;
+  background: white;
+  z-index: 2;
+  border-radius: 1em;
+}
+
+.modal-header {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.input-container {
+  margin-top: 1em;
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  color: var(--textColor);
+  font-size: 0.8em;
+  padding: 0.3em;
+  text-transform: capitalize;
+}
+
+.input-field {
+  display: block;
+  width: calc(100% - 2em);
+  height: 3em;
+  background-color: #f0f0f0;
+  border-radius: 2em;
+  border: 2px solid #ddd;
+  padding: 0px 1em;
+  outline: none;
+  caret-color: var(--primary);
+  color: var(--textColor);
+  font-size: 0.8em;
+  transition-duration: 0.2s;
+}
+
+.input-field:focus,
+.input-field:hover {
+  border: 2px solid var(--primary);
+  transition-duration: 0.2s;
+}
+
+.modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.submit-button,
+.cancel-button {
+  border-width: 1px;
+  border-style: solid;
+  transition: all 0.4s;
+  -webkit-transition: all 0.5s;
+  padding: 0.4em 0.8em;
+  border-radius: 0.3em;
+  font-size: 1em;
+}
+
+.submit-button {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: transparent;
+  color: var(--textColor);
+}
+
+.cancel-button {
+  border-color: red;
+  color: red;
+  background-color: #fff;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0;
+}
